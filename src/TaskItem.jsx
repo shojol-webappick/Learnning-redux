@@ -1,4 +1,4 @@
-export default function Task({ task, updateTask, deleteTask }) {
+export default function Task({ task = {}, updateTask, deleteTask }) {
   const { id, value, completed } = task;
 
   return (
@@ -53,3 +53,4 @@ export default function Task({ task, updateTask, deleteTask }) {
     </div>
   );
 }
+
